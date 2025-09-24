@@ -1,0 +1,1 @@
+Place real tesseract.min.js and tessdata language files here for offline OCR. See tesseract-ocr/tessdata.
