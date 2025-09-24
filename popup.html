@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<title>Spec Checker</title>
-<link rel="stylesheet" href="popup.css">
+  <meta charset="UTF-8">
+  <title>Spec Checker</title>
+  <link rel="stylesheet" href="popup.css">
 </head>
 <body>
   <div id="tabs">
     <button data-tab="check">검사</button>
-    <button data-tab="rules">규칙 편집</button>
-    <button data-tab="input">즉석 입력</button>
+    <button data-tab="rules">규칙</button>
+    <button data-tab="input">입력</button>
     <button data-tab="settings">설정</button>
   </div>
-  <div id="content">
-    <!-- 각 탭 내용 -->
-    <div id="check" class="tab-content"></div>
-    <div id="rules" class="tab-content"></div>
-    <div id="input" class="tab-content"></div>
-    <div id="settings" class="tab-content"></div>
+  <div id="tab-contents">
+    <div id="check" class="tab"></div>
+    <div id="rules" class="tab"></div>
+    <div id="input" class="tab">
+      <textarea id="inputText" placeholder="여기에 텍스트를 붙여넣어 검사하세요"></textarea>
+      <button id="checkInput">검사하기</button>
+      <div id="inputResult"></div>
+    </div>
+    <div id="settings" class="tab">
+      <label><input type="checkbox" id="highlightToggle" checked> 하이라이트 표시</label>
+    </div>
   </div>
 <script src="popup.js"></script>
 </body>
