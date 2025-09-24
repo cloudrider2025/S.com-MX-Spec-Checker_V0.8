@@ -19,10 +19,10 @@
   "no_space_units": [
     {"pattern": "\\d+°", "context": "미터법 아님"},
     {"pattern": "\\d+\"", "context": "미터법 아님"},
-    {"pattern": "\\d+x", "context": "업계 관행"},
-    {"pattern": "4K|HD|FHD|QHD|UHD", "context": "업계 관행"},
-    {"pattern": "5G|6G", "context": "업계 관행"},
-    {"pattern": "2D|3D|4D", "context": "업계 관행"},
-    {"pattern": "IP68", "context": "업계 관행"}
+    {"pattern": "\\d+x", "context": "단위 아님(축약어)"},
+    {"pattern": "4K|HD|FHD|QHD|UHD", "context": "단위 아님(축약어)"},
+    {"pattern": "5G|6G", "context": "단위 아님(축약어)"},
+    {"pattern": "2D|3D|4D", "context": "단위 아님(축약어)"},
+    {"pattern": "IP68", "context": "단위 아님(축약어)"}
   ]
 }
