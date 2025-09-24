@@ -1,20 +1,24 @@
-{
-  "manifest_version": 3,
-  "name": "Spec Checker",
-  "version": "1.0",
-  "description": "웹페이지 내 사양 표기 검사",
-  "permissions": ["activeTab", "scripting", "storage"],
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": "icon.png"
-  },
-  "background": {
-    "service_worker": "background.js"
-  },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"]
-    }
-  ]
-}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Spec Checker</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="tabs">
+    <button data-tab="check">검사</button>
+    <button data-tab="rules">규칙 편집</button>
+    <button data-tab="input">즉석 입력</button>
+    <button data-tab="settings">설정</button>
+  </div>
+  <div id="content">
+    <!-- 각 탭 내용 -->
+    <div id="check" class="tab-content"></div>
+    <div id="rules" class="tab-content"></div>
+    <div id="input" class="tab-content"></div>
+    <div id="settings" class="tab-content"></div>
+  </div>
+<script src="popup.js"></script>
+</body>
+</html>
