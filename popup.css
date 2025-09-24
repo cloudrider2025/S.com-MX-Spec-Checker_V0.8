@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 320px;
+  margin: 0;
+  padding: 10px;
+}
+
+#tabs button {
+  margin: 2px;
+  padding: 5px 10px;
+}
+
+.tab {
+  display: none;
+  margin-top: 10px;
+}
+
+.tab.active {
+  display: block;
+}
+
+.highlight {
+  background-color: yellow;
+  border: 1px solid red;
+}
