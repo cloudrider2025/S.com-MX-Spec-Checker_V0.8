@@ -1,0 +1,28 @@
+{
+  "space_units": [
+    {"pattern": "\\d+\\s?mm", "context": "SI 표준 물리량 체계"},
+    {"pattern": "\\d+\\s?cm", "context": "SI 표준 물리량 체계"},
+    {"pattern": "\\d+(\\.\\d+)?\\s?kg", "context": "SI 표준 물리량 체계"},
+    {"pattern": "\\d+\\s?W", "context": "SI 표준 물리량 체계"},
+    {"pattern": "\\d+\\s?Hz", "context": "SI 표준 물리량 체계"},
+    {"pattern": "\\d+\\s?MHz", "context": "SI 표준 물리량 체계"},
+    {"pattern": "\\d+(\\.\\d+)?\\s?GHz", "context": "SI 표준 물리량 체계"},
+    {"pattern": "\\d+\\s?°C", "context": "SI 표준 물리량 체계"},
+    {"pattern": "\\d+\\s?°F", "context": "SI 표준 물리량 체계"},
+    {"pattern": "\\d+\\s?h", "context": "SI 표준 물리량 체계"},
+    {"pattern": "\\d+\\s?min", "context": "SI 표준 물리량 체계"},
+    {"pattern": "\\d+\\s?%", "context": "글로벌 표준"},
+    {"pattern": "\\d+\\s?MB", "context": "글로벌 업계 표준"},
+    {"pattern": "\\d+\\s?GB", "context": "글로벌 업계 표준"},
+    {"pattern": "\\d+\\s?TB", "context": "글로벌 업계 표준"}
+  ],
+  "no_space_units": [
+    {"pattern": "\\d+°", "context": "미터법 아님"},
+    {"pattern": "\\d+\"", "context": "미터법 아님"},
+    {"pattern": "\\d+x", "context": "업계 관행"},
+    {"pattern": "4K|HD|FHD|QHD|UHD", "context": "업계 관행"},
+    {"pattern": "5G|6G", "context": "업계 관행"},
+    {"pattern": "2D|3D|4D", "context": "업계 관행"},
+    {"pattern": "IP68", "context": "업계 관행"}
+  ]
+}
